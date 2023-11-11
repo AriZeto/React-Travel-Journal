@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(233, 233, 233);
+}
+
+.Navbar--nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 4rem;
+  background-color: #f55a5a;
+}
+
+.Navbar--logo {
+  padding-left: 1rem;
+}
+
+.Navbar--text {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  color: white;
+}
+
+.Navbar--items {
+  display: flex;
+  margin-left: auto;
+}
+
+.Navbar--items > li {
+  display: flex;
+  margin-top: 1.4rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  color: white;
+}
+
+.Navbar--items > li > a {
+  text-decoration: none;
+}
+
+.Navbar--items > li > a:visited {
+  color: rgb(255, 255, 255);
+}
+
+.Navbar--items > li > a:hover {
+  border-bottom: #fdfdfd 3px solid;
+  border-radius: 3px;
+  padding-bottom: -10px;
+}
+
+.Card {
+  padding: 2rem;
+  margin-left: 10rem;
+  margin-right: 15rem;
+  display: flex;
+}
+
+.Card--title {
+  font-size: 2rem;
+}
+
+.Card--image {
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.Card--information {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.Card--items {
+  color: #918e9b;
+  display: flex;
+  flex-direction: space-between;
+}
+
+.Card--items > li {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.Card--dates {
+  display: flex;
+  margin-right: 10rem;
+  color: #2b283a;
+  color: #2b283a;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.Footer {
+  display: flex;
+  justify-content: flex-end;
+  height: 4rem;
+  background-color: #f55a5a;
+}
+
+.Footer--svg {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  transform: scale(0.8);
+}
+
+@media (min-width: 375px) and (max-width: 748px) {
+  .Card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .Card--information {
+    padding-left: 1rem;
+  }
+
+  .Navbar--items {
+    display: none;
+  }
+
+  .Navbar--nav {
+    justify-content: flex-start;
+  }
+
+  .Navbar--text {
+    display: flex;
+    align-items: center;
+    font-size: large;
+  }
+}
+
+@media (min-width: 749px) and (max-width: 1200px) {
+  .Card {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
